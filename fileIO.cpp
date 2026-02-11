@@ -8,7 +8,7 @@ int main(){
 	std::ofstream outFile;
 	outFile.open("data.csv");
 	if (outFile.is_open()){
-		outFile << "1, 2, this" << std::endl;
+		outFile << "1 ,2, this" << std::endl;
 		outFile << "3, 3, is" << std::endl;
 		outFile << "8, 1, a" << std::endl;
 		outFile << "2, 4, lot" << std::endl;
@@ -29,15 +29,23 @@ int main(){
 	//int i = 0;
 
 	inFile.open("data.csv");
-	while (getline(inFile, currentLine, ',')){
-		//testing below
+	while (getline(inFile, currentLine)){
+		
+		//testing below   
+		//CURRENT LINE WORKS!!!
 		//std::cout << currentLine << std::endl;
 		
 		converter.clear();
 		converter.str("");
 		converter.str(currentLine);
+
+		//another tester-> current line still working
+		//std::cout << currentLine;
+
 		converter >> firstNum >> secondNum >> text;
 		finalNum = firstNum + secondNum;
+		//another tester
+		std::cout << finalNum << "=" << firstNum << "+" << secondNum << "text: " << text; 
 		for (int i = 0; i < finalNum; i++){
 			std::cout << text;
 		} //end for
