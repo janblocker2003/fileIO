@@ -35,7 +35,7 @@ int main
   creat int called i that gets 0
 
   open inFile "data.csv"
-  while getline -> inFile, currentLine (while there is a line to read)
+  while getline -> inFile, currentLine, delimiter is ',' (while there is a line to read)
     clear converter
     empty str converter
     pass current line into stringstream converter.str(currentLine)
@@ -48,6 +48,6 @@ int main
   close the file
 //end main
 ```
-documentatio version before io lab video
+documentation version before io lab video
 
 ```
