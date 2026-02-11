@@ -1,5 +1,6 @@
 # Documentation
 
+## Directions from assignment:
 Create all the variables you'll need. This will include a file pointer, at least one stringstream, and a number of strings and ints
 Open up the data file
 Use a loop to read the file one line at a time
@@ -11,6 +12,7 @@ Add up the two integers
 Print the text that number of times
 Repeat for each line in the text file
 
+## Pseudocode:
 ```
 Create a file named data.csv and insert the following information:
 include fstream
