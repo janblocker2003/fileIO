@@ -26,17 +26,23 @@ int main(){
 	int firstNum;
 	int secondNum;
 	int finalNum;
-	int i = 0;
+	//int i = 0;
 
 	inFile.open("data.csv");
 	while (getline(inFile, currentLine, ',')){
 		//testing below
-		std::cout << currentLine << std::endl;
-		/*
+		//std::cout << currentLine << std::endl;
+		
 		converter.clear();
 		converter.str("");
-		conveter.str(currentLine);
-		*/
+		converter.str(currentLine);
+		converter >> firstNum >> secondNum >> text;
+		finalNum = firstNum + secondNum;
+		for (int i = 0; i < finalNum; i++){
+			std::cout << text;
+		} //end for
+		std::cout << std::endl;
+
 	} //end while
 } //end main
 
