@@ -48,6 +48,3 @@ int main
   close the file
 //end main
 ```
-documentation version before io lab video
-
-```
